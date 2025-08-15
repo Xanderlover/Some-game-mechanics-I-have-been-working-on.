@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd448qnwan7uo"]
+
+[ext_resource type="Script" uid="uid://cswrkh1hf80kx" path="res://addons/base_bigbrain_sys/components/interact/door/door.gd" id="1_vkfbt"]
+[ext_resource type="Texture2D" uid="uid://xlrvfpugu8wv" path="res://addons/base_bigbrain_sys/components/interact/door/door.png" id="2_1djmi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkfbt"]
+size = Vector2(16, 32)
+
+[node name="Door" type="Area2D"]
+script = ExtResource("1_vkfbt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0, -16)
+texture = ExtResource("2_1djmi")
+
+[node name="InteractableCollider" type="CollisionShape2D" parent="."]
+position = Vector2(0, -16)
+shape = SubResource("RectangleShape2D_vkfbt")

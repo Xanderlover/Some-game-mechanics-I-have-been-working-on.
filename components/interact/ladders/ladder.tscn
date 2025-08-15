@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cj6dcldessuwn"]
+
+[ext_resource type="Script" uid="uid://cjb1wqnsovh5a" path="res://ladder.gd" id="1_ytmdp"]
+[ext_resource type="Texture2D" uid="uid://b87rqjb572iv1" path="res://addons/base_bigbrain_sys/components/interact/ladders/ladders.png" id="2_og57k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bw7up"]
+size = Vector2(16, 16)
+
+[node name="Ladder" type="Area2D"]
+script = ExtResource("1_ytmdp")
+metadata/_custom_type_script = "uid://bv6yoq1gnytwy"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_og57k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bw7up")

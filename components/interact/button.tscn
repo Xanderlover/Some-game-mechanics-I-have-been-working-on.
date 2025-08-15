@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv3hyspb0yfur"]
+
+[ext_resource type="Script" uid="uid://36p3s6l1vstc" path="res://addons/base_bigbrain_sys/components/interact/button.gd" id="1_4xs11"]
+[ext_resource type="Texture2D" uid="uid://dwvh6jqua8fcq" path="res://assets/sprites/world_tileset.png" id="2_umqrr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ib1dj"]
+size = Vector2(14, 16)
+
+[node name="Button" type="Area2D"]
+script = ExtResource("1_4xs11")
+metadata/_custom_type_script = "uid://bv6yoq1gnytwy"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("2_umqrr")
+region_enabled = true
+region_rect = Rect2(128, 48, 16, 16)
+
+[node name="InteractCollider" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("RectangleShape2D_ib1dj")

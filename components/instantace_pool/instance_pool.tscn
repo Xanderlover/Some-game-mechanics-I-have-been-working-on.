@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvhiqpjk8s1m"]
+
+[ext_resource type="Script" uid="uid://drixjdni5b8sn" path="res://addons/base_bigbrain_sys/components/instantace_pool/instance_pool.gd" id="1_xbga4"]
+
+[node name="InstancePool" type="Node" groups=["InstancePool"]]
+script = ExtResource("1_xbga4")
