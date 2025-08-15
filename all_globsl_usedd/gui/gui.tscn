@@ -1,0 +1,70 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyecv3peopbvs"]
+
+[ext_resource type="Script" uid="uid://2ypgeb57o6i6" path="res://addons/base_bigbrain_sys/all_globsl_usedd/gui/gui.gd" id="1_yasr5"]
+[ext_resource type="Texture2D" uid="uid://di1rt6agbw43b" path="res://icon.svg" id="2_k5760"]
+[ext_resource type="Shader" uid="uid://bixw5sqwrpldd" path="res://addons/base_bigbrain_sys/all_globsl_usedd/gui/select.gdshader" id="2_l73nv"]
+[ext_resource type="Shader" uid="uid://wug4bftcxcxd" path="res://addons/base_bigbrain_sys/all_globsl_usedd/gui/pause_pattern.gdshader" id="2_wom1c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ayjau"]
+shader = ExtResource("2_wom1c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nj5c5"]
+shader = ExtResource("2_l73nv")
+shader_parameter/color = Color(0.878431, 0.878431, 0.878431, 0.541176)
+shader_parameter/frequency = Vector2(4, 2)
+shader_parameter/amplitude = 1.5
+shader_parameter/speed = 5.0
+
+[node name="GUI" type="CanvasLayer"]
+process_mode = 3
+visible = false
+script = ExtResource("1_yasr5")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_ayjau")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_k5760")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+visible = false
+material = SubResource("ShaderMaterial_nj5c5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 262.0
+offset_top = 198.0
+offset_right = 281.0
+offset_bottom = 198.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.313411
+texture = ExtResource("2_k5760")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="Control"]
+material = SubResource("ShaderMaterial_nj5c5")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 228.0
+offset_top = 192.0
+offset_right = 346.0
+offset_bottom = 182.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.0741141
+texture = ExtResource("2_k5760")
+expand_mode = 1

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://skaot5omasq7"]
+
+[ext_resource type="Script" uid="uid://dkj8gfa3fnlkv" path="res://addons/base_bigbrain_sys/all_globsl_usedd/hitstoptime/hitstoptime.gd" id="1_dtife"]
+
+[node name="HitstopManager" type="Timer"]
+one_shot = true
+ignore_time_scale = true
+script = ExtResource("1_dtife")
+metadata/_custom_type_script = "uid://dkj8gfa3fnlkv"
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]
