@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ShakePattern" load_steps=2 format=3 uid="uid://c6mxrbo24yq13"]
+
+[ext_resource type="Script" uid="uid://cjiobw6k4v24g" path="res://addons/base_bigbrain_sys/screen_shake/shake_patterns.gd" id="1_gfbcq"]
+
+[resource]
+script = ExtResource("1_gfbcq")
+speed = 5.0
+amplitude = Vector2(0, 3)
+sustain_amplitude = Vector2(0, 0)
+whirlpool_size = 0.0
+shake_time = 0.25
+description = "It only shakes Up and Down."
+metadata/_custom_type_script = "uid://cjiobw6k4v24g"

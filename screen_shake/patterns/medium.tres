@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ShakePattern" load_steps=2 format=3 uid="uid://buxqtl2rq06em"]
+
+[ext_resource type="Script" uid="uid://cjiobw6k4v24g" path="res://addons/base_bigbrain_sys/screen_shake/shake_patterns.gd" id="1_1dg71"]
+
+[resource]
+script = ExtResource("1_1dg71")
+speed = 15.0
+amplitude = Vector2(0, 0)
+sustain_amplitude = Vector2(0, 0)
+whirlpool_size = 8.0
+shake_time = 0.5
+description = "It shakes Vertically and Horizontally. But with medium shake."
+metadata/_custom_type_script = "uid://cjiobw6k4v24g"
